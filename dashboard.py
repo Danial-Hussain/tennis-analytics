@@ -61,10 +61,13 @@ compare = st.beta_container()
 with introduction:
     title = st.beta_columns(1)[0]
     subtitle= st.beta_columns(1)[0]
+    source = st.beta_columns(1)[0]
     space = st.beta_columns(1)[0]
     space.header("\n")
     title.title("Tennis Player Analytics Dashboard")
     subtitle.header("Built by Ali Danial Hussain\n")
+    source.markdown("[**Data Source: The Match Charting Project by Jeff Sackmann**]\
+    (https://github.com/JeffSackmann/tennis_MatchChartingProject)")
     details = st.beta_expander(
         "Learn More!"
     )
@@ -241,5 +244,6 @@ with details:
         Each grandslam is played on a different surface which effects the\
         way in which the ball bounces. This also effects the tactics and\
         strategies used by the players.
+
         """
     )
